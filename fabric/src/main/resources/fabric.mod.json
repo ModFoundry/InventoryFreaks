@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "inventoryfreaks",
+  "version": "${version}",
+  "name": "InventoryFreaks",
+  "description": "",
+  "authors": [
+    ""
+  ],
+  "contact": {
+    "homepage": ""
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/inventoryfreaks/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "dev.derpierre65.inventoryfreaks.fabric.InventoryfreaksFabric"
+    ],
+    "client": [
+      "dev.derpierre65.inventoryfreaks.fabric.client.InventoryfreaksFabricClient"
+    ]
+  },
+  "mixins": [
+    "inventoryfreaks.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.9",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "architectury": ">=13.0.8",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
